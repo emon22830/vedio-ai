@@ -45,7 +45,38 @@ const RegisterPage = () => {
 
   return (
     <div>
-      <h1>Register</h1> 
+      <h1>Register</h1>
+      <form onSubmit={handleSumit}>
+         <input
+         type="email"
+         placeholder='Email'
+         value={email}
+         onChange={(e) => setEmail(e.target.value)}
+         />
+
+          <input
+         type="password"
+         placeholder='password'
+         value={email}
+         onChange={(e) => setPassword(e.target.value)}
+         />
+
+          <input
+         type="password"
+         placeholder='Confirm Password'
+         value={confirmPassword}
+         onChange={(e) => setConfiemPassword(e.target.value)}
+         />
+
+
+        
+        
+        
+        </form> 
+
+        <div>
+          <p>ALready have an account? <a href='/login'>Login</a></p>
+        </div>
     </div>
   )
 }
